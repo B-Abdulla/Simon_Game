@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="simonstyle.css" />
+    <title>Simon Game</title>
+  </head>
+  <body>
+    <!-- <h1>Simon Game</h1> -->
+    <h1
+      style="
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #ffffff;
+        background: linear-gradient(to right, #00ffcc, #ff00ff);
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.6);
+      "
+    >
+      🧠 Simon Memory Game
+    </h1>
+
+    <h2>Press any key to start the game</h2>
+    <h2 class="highest"></h2>
+    <div class="btn-container">
+      <div class="line-one">
+        <div class="btn yellow" type="button" id="yellow">1</div>
+        <div class="btn red" type="button" id="red">2</div>
+      </div>
+      <div class="line-two">
+        <div class="btn purple" type="button" id="purple">3</div>
+        <div class="btn green" type="button" id="green">4</div>
+      </div>
+    </div>
+    <input type="button" value="Restart" id="restart-btn" />
+    <script src="simonapp.js"></script>
+  </body>
+</html>
