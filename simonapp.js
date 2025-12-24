@@ -44,17 +44,14 @@ function levelUp() {
   let randColor = btns[randIdx];
   let randbtn = document.querySelector(`.${randColor}`);
 
-  // console.log(randIdx);
-  // console.log(randColor);
-  // console.log(randbtn);
+
   gameSeq.push(randColor);
   console.log(gameSeq);
   gameFlash(randbtn);
 }
 
 function checkAns(idx) {
-  // console.log("curr level:",level);
-  // let idx = level - 1;
+
 
   if (userSeq[idx] == gameSeq[idx]) {
     if (userSeq.length == gameSeq.length) {
@@ -80,7 +77,6 @@ document.querySelector("#restart-btn").addEventListener("click", function () {
   reset();
 });
 function btnPress() {
-  //console.log(this);
   let btn = this;
   userFlash(btn);
 
