@@ -60,13 +60,13 @@ function checkAns(idx) {
     if (level > highest) {
       highest = level;
     }
-    h2.innerHTML = `Game Over! Your Score was </b> ${level}</b> <br/>Press Start button to start.`;
+    h2.innerHTML = `❌ Game Over! Your Score was </b> ${level}</b> <br/>Press Start button again to start.`;
     document.querySelector("body").style.backgroundColor = "red";
 
     setTimeout(function () {
       document.querySelector("body").style.backgroundColor = "white";
     }, 200);
-    high.innerHTML = `Highest Score :<b>${highest}</b>`;
+    high.innerHTML = `🏆 Highest Score :<b>${highest}</b>`;
     reset();
   }
 }
