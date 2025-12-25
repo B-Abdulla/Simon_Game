@@ -72,7 +72,7 @@ function checkAns(idx) {
 }
 document.querySelector("#restart-btn").addEventListener("click", function () {
   h2.innerText = "Press Start button again to start.";
-  high.innerHTML = `Highest Score :<b>${highest}</b>`;
+  high.innerHTML = `🏆 Highest Score :<b>${highest}</b>`;
   reset();
 });
 function btnPress() {
